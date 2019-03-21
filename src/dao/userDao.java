@@ -77,24 +77,12 @@ public class userDao implements dao{
      */
     @Override
     public int getCount(Map<String, String[]> condition) {
-        String sql = "select * from user_info where 1 = 1";
-        StringBuffer sbf = new StringBuffer(sql);
+        // 用于存储 ? 的值
         List<Object> values = new ArrayList<Object>();
-        for (String s : condition.keySet()) {
-            //排除分页条件参数
-            if("pageindex".equals(s) || "pagesize".equals(s)){
-                continue;
-            }
-            String value = condition.get(s)[0];
-            if (value != null && value != ""){
-                sbf.append(" and "+s+"= ?");
-                values.add(value);
-            }
-        }
+        StringBuffer sbf = spilString(condition, values);
 
-        List<user> users = null;
         try {
-            users = jdbcTemplate.query(sbf.toString(), new BeanPropertyRowMapper<user>(user.class), values.toArray());
+            List<user> users = jdbcTemplate.query(sbf.toString(), new BeanPropertyRowMapper<user>(user.class), values.toArray());
             return users.size();
         } catch (Exception e){
             e.printStackTrace();
@@ -127,12 +115,27 @@ public class userDao implements dao{
         List<user> users = jdbcTemplate.query(sql, new BeanPropertyRowMapper<user>(user.class), start, end);
         return users;
     }
-
+    @Override
     public List<user> findbycond(Map<String, String[]> condition, spilpage spilpage){
+        // 用于存储 ? 的值
+        List<Object> values = new ArrayList<Object>();
+        StringBuffer sbf = spilString(condition, values);
+//        System.out.println(sbf.toString());
+        // 拼接分页查询
+        sbf.append(" limit ? , ?");
+//        System.out.println(sbf.toString());
+        int start = (spilpage.getPageindex() - 1) * spilpage.getPagesize();
+        int end = spilpage.getPagesize();
+        values.add(start);
+        values.add(end);
+
+        return jdbcTemplate.query(sbf.toString(), new BeanPropertyRowMapper<user>(user.class), values.toArray());
+    }
+
+    public static StringBuffer spilString(Map<String, String[]> condition, List<Object> values){
         // 方便拼接查询字符串
         String sql = "select * from user_info where 1 = 1";
         StringBuffer sbf = new StringBuffer(sql);
-        List<Object> values = new ArrayList<Object>();
         for (String s : condition.keySet()) {
             //排除分页条件参数
             if("pageindex".equals(s) || "pagesize".equals(s)){
@@ -144,17 +147,6 @@ public class userDao implements dao{
                 values.add(value);
             }
         }
-        System.out.println(sbf.toString());
-        sbf.append(" limit ? , ?");
-        System.out.println(sbf.toString());
-        int start = (spilpage.getPageindex() - 1) * spilpage.getPagesize();
-        int end = spilpage.getPagesize();
-        values.add(start);
-        values.add(end);
-        Object[] valuearr = values.toArray();
-        for (Object o : valuearr) {
-            System.out.println(o);
-        }
-        return jdbcTemplate.query(sbf.toString(), new BeanPropertyRowMapper<user>(user.class), valuearr);
+        return sbf;
     }
 }

@@ -10,13 +10,13 @@ import java.util.Map;
  */
 public class Service {
     /**
-     *
+     * 用户记录列表的初始化
      * @param pageindex
      * @return
      */
     public spilpage inituserlist(String pageindex, Map<String, String[]> condition){
         int index = 1;
-        // 判断是否是下一页 或者 上一页
+        // 判断页码请求 
         if (pageindex == null || pageindex.equals("")){
             index = 1;
         } else {
