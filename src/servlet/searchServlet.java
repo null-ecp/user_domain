@@ -6,6 +6,7 @@ import bean.user;
 import dao.userDao;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import service.Service;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,23 +30,9 @@ public class searchServlet extends HttpServlet {
         // 获取页面参数
         String pageindex = request.getParameter("pageindex");
         Map<String, String[]> condition = request.getParameterMap();
-        int index = 1;
-        // 判断是否是下一页 或者 上一页
-        if (pageindex == null || pageindex.equals("")){
-            index = 1;
-        } else {
-            index = Integer.parseInt(pageindex);
-        }
-        // 创建
-        userDao userDao = new userDao();
-        spilpage spilpage = new spilpage();
-        // 设置页面对象
-        spilpage.setTotal(userDao.getCount(condition));
-        spilpage.setPageindex(index);
-        spilpage.setPagecount();
-        // 查询数据
-        List<user> list = userDao.findbypage(spilpage);
-        spilpage.setList(list);
+        // 创建事件处理类
+        Service service = new Service();
+        spilpage spilpage = service.inituserlist(pageindex, condition);
         // 设置域属性
         request.setAttribute("page",spilpage);
         // 跳转页面
