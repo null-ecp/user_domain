@@ -141,7 +141,21 @@
     }
     function del_submit() {
         var del_from = document.getElementById("del_check")
-        del_from.submit();
+        var users = document.getElementsByName("check")
+
+        if (confirm("确定删除选中用户?")) {
+            var len = 0;
+            for (var i = 0; i < users.length; i += 1){
+                if (users[i].checked == true){
+                    len += 1
+                }
+            }
+            if (len > 0){
+                del_from.submit();
+            } else {
+                alert("请选中用户后再删除")
+            }
+        }
     }
     function checknext(index) {
         var next = document.getElementById("next")

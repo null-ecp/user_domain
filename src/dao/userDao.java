@@ -115,6 +115,13 @@ public class userDao implements dao{
         List<user> users = jdbcTemplate.query(sql, new BeanPropertyRowMapper<user>(user.class), start, end);
         return users;
     }
+
+    /**
+     * 复杂条件查询
+     * @param condition
+     * @param spilpage
+     * @return
+     */
     @Override
     public List<user> findbycond(Map<String, String[]> condition, spilpage spilpage){
         // 用于存储 ? 的值
@@ -132,6 +139,12 @@ public class userDao implements dao{
         return jdbcTemplate.query(sbf.toString(), new BeanPropertyRowMapper<user>(user.class), values.toArray());
     }
 
+    /**
+     * 拼接复杂条件查询的字符串
+     * @param condition
+     * @param values
+     * @return
+     */
     public static StringBuffer spilString(Map<String, String[]> condition, List<Object> values){
         // 方便拼接查询字符串
         String sql = "select * from user_info where 1 = 1";
