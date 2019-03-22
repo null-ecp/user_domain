@@ -99,7 +99,34 @@
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <c:forEach begin="1" end="${page.pagecount}" var="index">
+
+
+                <c:if test="${page.pagecount < 6}">
+                    <c:set var="start" value="1" />
+                    <c:set var="over" value="${page.pagecount}" />
+                </c:if>
+
+                <c:if test="${page.pagecount > 5}">
+                    <c:set var="start" value="${page.pageindex - 2}" />
+                    <c:set var="over" value="${page.pageindex + 2}" />
+
+                    <c:if test="${start < 1}">
+                        <c:set var="start" value="1" />
+                        <c:set var="over" value="5" />
+                    </c:if>
+
+                    <c:if test="${page.pagecount < over}">
+                        <c:set var="start" value="${page.pagecount - 4}" />
+                        <c:set var="over" value="${page.pagecount}" />
+                    </c:if>
+                </c:if>
+
+                <%--<c:if test="${over > page.pagecount}">--%>
+                    <%--<c:set var="start" value="${page.pagecount -5}" />--%>
+                    <%--<c:set var="over" value="${page.pagecount}" />--%>
+                <%--</c:if>--%>
+
+                <c:forEach begin="${start}" end="${over}" var="index">
 
                     <c:if test="${index == page.pageindex}">
                         <li  class="active"><a href="${pageContext.request.contextPath}/searchbycond?pageindex=${index}&uname=${condition.uname[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${index}</a></li>
@@ -141,7 +168,22 @@
     }
     function del_submit() {
         var del_from = document.getElementById("del_check")
-        del_from.submit();
+        var users = document.getElementsByName("check")
+
+        if (confirm("确定删除选中用户?")) {
+            var len = 0;
+            for (var i = 0; i < users.length; i += 1){
+                if (users[i].checked == true){
+                    len += 1
+                    break;
+                }
+            }
+            if (len > 0){
+                del_from.submit();
+            } else {
+                alert("请选中用户后再删除")
+            }
+        }
     }
     function checknext(index) {
         var next = document.getElementById("next")

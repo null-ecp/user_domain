@@ -99,7 +99,37 @@
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <c:forEach begin="1" end="${page.pagecount}" var="index">
+
+                <%-- 设置页码显示数 --%>
+                <%-- 总页码小于6则正常显示 --%>
+                <c:if test="${page.pagecount < 6}">
+                    <c:set var="start" value="1" />
+                    <c:set var="over" value="${page.pagecount}" />
+                </c:if>
+                <%-- 大于5 则显示当前页面前后两条 --%>
+                <c:if test="${page.pagecount > 5}">
+                    <c:set var="start" value="${page.pageindex - 2}" />
+                    <c:set var="over" value="${page.pageindex + 2}" />
+
+                    <%-- 当页码开始动态显示 第一条页码小于1则恢复默认显示1-5 --%>
+                    <c:if test="${start < 1}">
+                        <c:set var="start" value="1" />
+                        <c:set var="over" value="5" />
+                    </c:if>
+
+                    <%-- 当页码走到最后则显示最后5页 --%>
+                    <c:if test="${page.pagecount < over}">
+                        <c:set var="start" value="${page.pagecount - 4}" />
+                        <c:set var="over" value="${page.pagecount}" />
+                    </c:if>
+                </c:if>
+
+                <%--<c:if test="${over > page.pagecount}">--%>
+                    <%--<c:set var="start" value="${page.pagecount -5}" />--%>
+                    <%--<c:set var="over" value="${page.pagecount}" />--%>
+                <%--</c:if>--%>
+
+                <c:forEach begin="${start}" end="${over}" var="index">
 
                     <c:if test="${index == page.pageindex}">
                         <li  class="active"><a href="${pageContext.request.contextPath}/searchbycond?pageindex=${index}&uname=${condition.uname[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${index}</a></li>
@@ -148,6 +178,7 @@
             for (var i = 0; i < users.length; i += 1){
                 if (users[i].checked == true){
                     len += 1
+                    break;
                 }
             }
             if (len > 0){
