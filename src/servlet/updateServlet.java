@@ -17,7 +17,6 @@ import java.util.Map;
 @WebServlet("/update")
 public class updateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("utf-8");
         // 获取需要修改信息的用户id
         String id1 = request.getSession().getAttribute("id").toString();
         request.getSession().removeAttribute("id");

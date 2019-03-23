@@ -39,16 +39,16 @@
         <form class="form-inline" action="${pageContext.request.contextPath}/searchbycond" method="post" >
             <div class="form-group">
                 <label for="uname">姓名</label>
-                <input type="text" class="form-control" id="uname" name="uname">
+                <input type="text" class="form-control" id="uname" name="uname" value="${condition.uname[0]}">
             </div>
             <div class="form-group">
                 <label for="address">籍贯</label>
-                <input type="text" class="form-control" id="address" name="address">
+                <input type="text" class="form-control" id="address" name="address" value="${condition.address[0]}">
             </div>
 
             <div class="form-group">
                 <label for="email">邮箱</label>
-                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control" id="email" name="email" value="${condition.email[0]}">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
@@ -100,21 +100,24 @@
                     </a>
                 </li>
 
-
+                <%-- 设置页码显示数 --%>
+                <%-- 总页码小于6则正常显示 --%>
                 <c:if test="${page.pagecount < 6}">
                     <c:set var="start" value="1" />
                     <c:set var="over" value="${page.pagecount}" />
                 </c:if>
-
+                <%-- 大于5 则显示当前页面前后两条 --%>
                 <c:if test="${page.pagecount > 5}">
                     <c:set var="start" value="${page.pageindex - 2}" />
                     <c:set var="over" value="${page.pageindex + 2}" />
 
+                    <%-- 当页码开始动态显示 第一条页码小于1则恢复默认显示1-5 --%>
                     <c:if test="${start < 1}">
                         <c:set var="start" value="1" />
                         <c:set var="over" value="5" />
                     </c:if>
 
+                    <%-- 当页码走到最后则显示最后5页 --%>
                     <c:if test="${page.pagecount < over}">
                         <c:set var="start" value="${page.pagecount - 4}" />
                         <c:set var="over" value="${page.pagecount}" />

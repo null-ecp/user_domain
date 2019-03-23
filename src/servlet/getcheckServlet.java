@@ -22,6 +22,7 @@ public class getcheckServlet extends HttpServlet {
         checkcode.getcheckcode(bimg);
         ImageIO.write(bimg, "jpg", response.getOutputStream());
         // 上传验证码到session
+        System.out.println(checkcode.getCode());
         request.getSession().setAttribute("code",checkcode.getCode());
 
     }

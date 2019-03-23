@@ -5,15 +5,14 @@ import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
 /**
- * 设置编码
+ * 敏感言论过滤
  */
-@WebFilter(value = "/*", dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD})
-public class encodeFilter implements Filter {
+@WebFilter(filterName = "fuckFilter")
+public class fuckFilter implements Filter {
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        req.setCharacterEncoding("utf-8");
         chain.doFilter(req, resp);
     }
 

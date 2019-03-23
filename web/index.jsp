@@ -22,7 +22,6 @@
     </script>
   </head>
   <body>
-
   <div class="container" style="width: 400px;">
     <h3 style="text-align: center;">管理员登录</h3>
     <form action="${pageContext.request.contextPath}/login" method="post">

@@ -18,8 +18,6 @@ import java.util.Map;
 @WebServlet("/searchbycond")
 public class searchbycondServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 设置编码
-        request.setCharacterEncoding("utf-8");
         // 获取条件参数集合
         Map<String, String[]> condition = request.getParameterMap();
         String pageindex = request.getParameter("pageindex");

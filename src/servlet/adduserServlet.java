@@ -17,7 +17,6 @@ import java.util.Map;
 @WebServlet("/adduser")
 public class adduserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("utf-8");
         // 创建map集合用于存值
         Map<String, String> values = new HashMap<String, String>();
         values.put("uname",request.getParameter("uname"));

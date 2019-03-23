@@ -16,7 +16,6 @@ import java.io.IOException;
 @WebServlet("/login")
 public class loginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("utf-8");
         // 获取用户输入
         String id = request.getParameter("id");
         String pd = request.getParameter("pd");
@@ -28,6 +27,7 @@ public class loginServlet extends HttpServlet {
         if (checkcode.checkinput(incode, code)){
             adminimpl adm = new adminimpl();
             if (adm.login(id,pd)) {
+                request.getSession().setAttribute("loginflag", true);
                 response.sendRedirect(request.getContextPath() + "/search");
             } else {
                 request.getSession().setAttribute("login_msg","用户名或密码输入错误");

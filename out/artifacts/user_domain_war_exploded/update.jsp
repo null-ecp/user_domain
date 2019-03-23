@@ -18,11 +18,6 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<%
-    String id = request.getParameter("id");
-    System.out.println(id);
-    session.setAttribute("id",id);
-%>
 <div class="container" style="width: 400px;">
     <h3 style="text-align: center;">修改用户信息</h3>
     <form action="${pageContext.request.contextPath}/update" method="post">
