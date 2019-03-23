@@ -39,16 +39,16 @@
         <form class="form-inline" action="${pageContext.request.contextPath}/searchbycond" method="post" >
             <div class="form-group">
                 <label for="uname">姓名</label>
-                <input type="text" class="form-control" id="uname" name="uname">
+                <input type="text" class="form-control" id="uname" name="uname" value="${condition.uname[0]}">
             </div>
             <div class="form-group">
                 <label for="address">籍贯</label>
-                <input type="text" class="form-control" id="address" name="address">
+                <input type="text" class="form-control" id="address" name="address" value="${condition.address[0]}">
             </div>
 
             <div class="form-group">
                 <label for="email">邮箱</label>
-                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control" id="email" name="email" value="${condition.email[0]}">
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>

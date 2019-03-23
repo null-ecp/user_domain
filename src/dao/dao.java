@@ -36,12 +36,6 @@ public interface dao {
     public void delete(int id);
 
     /**
-     * 批量删除选中用户
-     * @param ids
-     */
-    public void deletecheck(String[] ids);
-
-    /**
      * 获取记录总条数
      * @return
      */

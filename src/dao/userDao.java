@@ -60,18 +60,6 @@ public class userDao implements dao{
     }
 
     /**
-     * 删除选中的用户记录
-     * @param ids
-     */
-    @Override
-    public void deletecheck(String[] ids) {
-        for (String id : ids) {
-            int i = Integer.parseInt(id);
-            jdbcTemplate.update("delete from user_info where id = ?", id);
-        }
-    }
-
-    /**
      * 获取记录总条数
      * @return
      */
@@ -155,9 +143,10 @@ public class userDao implements dao{
                 continue;
             }
             String value = condition.get(s)[0];
+            // 做模糊查询
             if (value != null && value != ""){
-                sbf.append(" and "+s+"= ?");
-                values.add(value);
+                sbf.append(" and "+s+" like ?");
+                values.add("%"+value+"%");
             }
         }
         return sbf;

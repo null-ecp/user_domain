@@ -16,11 +16,10 @@ import java.io.IOException;
 public class deletecheckServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String[] checks = request.getParameterValues("check");
-        for (String check : checks) {
-            System.out.println(check);
-        }
         userDao userdao = new userDao();
-        userdao.deletecheck(checks);
+        for (String check : checks) {
+            userdao.delete(Integer.parseInt(check));
+        }
         response.sendRedirect(request.getContextPath() + "/search");
     }
 
