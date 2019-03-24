@@ -19,16 +19,6 @@ public class userDao implements dao{
     private JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtil.getdatasource());
 
     /**
-     * 查询user表中的所有记录封装成一个list集合
-     * @return users 封装user对象的list集合
-     */
-    @Override
-    public List<user> findall() {
-        List<user> users = jdbcTemplate.query("select * from user_info", new BeanPropertyRowMapper<user>(user.class));
-        return users;
-    }
-
-    /**
      * 根据请求的id查询指定用户 , 并修改信息
      * @param id
      */
@@ -115,10 +105,10 @@ public class userDao implements dao{
         // 用于存储 ? 的值
         List<Object> values = new ArrayList<Object>();
         StringBuffer sbf = spilString(condition, values);
-//        System.out.println(sbf.toString());
+        System.out.println(sbf.toString());
         // 拼接分页查询
         sbf.append(" limit ? , ?");
-//        System.out.println(sbf.toString());
+        System.out.println(sbf.toString());
         int start = (spilpage.getPageindex() - 1) * spilpage.getPagesize();
         int end = spilpage.getPagesize();
         values.add(start);

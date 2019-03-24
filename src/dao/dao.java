@@ -11,12 +11,6 @@ import java.util.Map;
  * 用于定义需要完成的操作
  */
 public interface dao {
-    
-    /**
-     * 查询数据库中所有的用户
-     * @return
-     */
-    public List<user> findall();
 
     /**
      * 更新用户数据

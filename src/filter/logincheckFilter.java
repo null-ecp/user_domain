@@ -28,7 +28,7 @@ public class logincheckFilter implements Filter {
             chain.doFilter(req, resp);
         }
         // 登录页面过滤
-        if (uri.contains("getcode") || uri.contains("index.jsp") || uri.equals("/user/")){
+        if (uri.contains("getcode") || uri.contains("index.jsp") || uri.equals("/user/") || uri.contains("/login")){
 //            request.getSession().removeAttribute("login_msg");
             chain.doFilter(req, resp);
         } else {

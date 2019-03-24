@@ -24,18 +24,21 @@ public class loginServlet extends HttpServlet {
         String code = (String) request.getSession().getAttribute("code");
         request.getSession().removeAttribute("code");
         // 判断验证码输入
-        if (checkcode.checkinput(incode, code)){
+        if (incode != null && checkcode.checkinput(incode, code)){
             adminimpl adm = new adminimpl();
             if (adm.login(id,pd)) {
                 request.getSession().setAttribute("loginflag", true);
                 response.sendRedirect(request.getContextPath() + "/search");
+                return;
             } else {
                 request.getSession().setAttribute("login_msg","用户名或密码输入错误");
-                response.sendRedirect("index.jsp");
+                request.getRequestDispatcher("index.jsp").forward(request, response);
+                return;
             }
         } else {
-            request.getSession().setAttribute("login_msg","验证码输入错误");
-            response.sendRedirect("index.jsp");
+            request.getSession().setAttribute("login_msg","验证码错误");
+            request.getRequestDispatcher("index.jsp").forward(request, response);
+            return;
         }
     }
 
