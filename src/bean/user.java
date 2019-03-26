@@ -1,15 +1,20 @@
 package bean;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * 用户对象
  * 用于封装用户信息
  */
 public class user {
-
+    @JsonIgnore
     private int id;
     private String uname;
+    @JsonIgnore
     private String sex;
+    @JsonIgnore
     private int age;
+    @JsonIgnore
     private String address;
     private String email;
 

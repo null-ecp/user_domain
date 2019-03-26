@@ -7,21 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd5b2fc-420f-4d7b-9b89-5e2ea1a2d9de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fuckfilter.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/usernamecheckServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-annotations-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-core-2.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-databind-2.2.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/bean/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/bean/user.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/dao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/userDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/userDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/servlet/loginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/servlet/loginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/user_domain/bean/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user_domain/bean/user.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/user_domain/dao/dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user_domain/dao/dao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/user_domain/dao/userDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user_domain/dao/userDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/user_domain/servlet/loginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user_domain/servlet/loginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/user.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/dao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/userDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/userDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/filter/fuckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/fuckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filter/logincheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/logincheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/add.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,10 +35,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/list.jsp">
+        <entry file="file://$PROJECT_DIR$/src/bean/user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
-              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+            <state relative-caret-position="440">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="55" column="12" selection-start-line="49" selection-start-column="6" selection-end-line="55" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1700">
+              <caret line="85" column="64" lean-forward="true" selection-start-line="85" selection-start-column="64" selection-end-line="85" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/usernamecheckServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+              <folding>
+                <element signature="e#731#747#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/dao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+            <state relative-caret-position="329">
+              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,28 +89,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/loginServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/deletecheckServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="300">
               <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/searchServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -83,17 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlet/searchbycondServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="300">
               <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/filter/logincheckFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="41" column="13" selection-start-line="34" selection-start-column="12" selection-end-line="41" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -101,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/service/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="640">
               <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,14 +118,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/filter/fuckFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="63">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#460#468#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,11 +133,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/userDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="195">
+              <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#findbyid#0;class#userDao#0" />
               </folding>
             </state>
           </provider>
@@ -158,13 +164,11 @@
         <option value="D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/servlet/deleteServlet.java" />
         <option value="D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/add.html" />
-        <option value="$PROJECT_DIR$/web/add.jsp" />
         <option value="$PROJECT_DIR$/src/Util/checkcode.java" />
         <option value="D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/login.html" />
         <option value="$PROJECT_DIR$/src/dao/adminDao.java" />
         <option value="$PROJECT_DIR$/src/bean/admin.java" />
         <option value="D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/资料/list.jsp" />
-        <option value="$PROJECT_DIR$/src/bean/user.java" />
         <option value="$PROJECT_DIR$/src/servlet/searchbycionServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/checkuserServlet.java" />
         <option value="$PROJECT_DIR$/src/bean/spilpage.java" />
@@ -184,9 +188,13 @@
         <option value="$PROJECT_DIR$/src/fuckfiltet.txt" />
         <option value="$PROJECT_DIR$/src/servlet/loginServlet.java" />
         <option value="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/fuckfilter.txt" />
-        <option value="$PROJECT_DIR$/src/dao/userDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/dao.java" />
+        <option value="D:/BaiduNetdiskDownload/day21_JQuery高级/代码/day21_JQuery高级/04-jQuery综合案例/抽奖.html" />
+        <option value="$PROJECT_DIR$/src/bean/user.java" />
         <option value="$PROJECT_DIR$/src/filter/fuckFilter.java" />
+        <option value="$PROJECT_DIR$/src/dao/dao.java" />
+        <option value="$PROJECT_DIR$/src/dao/userDao.java" />
+        <option value="$PROJECT_DIR$/src/servlet/usernamecheckServlet.java" />
+        <option value="$PROJECT_DIR$/web/add.jsp" />
       </list>
     </option>
   </component>
@@ -216,41 +224,6 @@
             <path>
               <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
               <item name="user_domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="user_domain_war_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="user_domain_war_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="user_domain_war_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
@@ -292,6 +265,25 @@
               <item name="user_domain" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="user_domain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="user_domain" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -308,14 +300,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ad725\IdeaProjects\user_domain\src\Util" />
-      <recent name="C:\Users\ad725\IdeaProjects\user_domain\web" />
-      <recent name="C:\Users\ad725\IdeaProjects\user_domain\web\WEB-INF\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ad725\IdeaProjects\user_domain\web" />
       <recent name="C:\Users\ad725\IdeaProjects\user_domain\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ad725\IdeaProjects\user_domain\web\WEB-INF\lib" />
+      <recent name="C:\Users\ad725\IdeaProjects\user_domain\src\Util" />
+      <recent name="C:\Users\ad725\IdeaProjects\user_domain\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -417,6 +409,7 @@
       <workItem from="1552809947981" duration="22049000" />
       <workItem from="1552965250006" duration="30165000" />
       <workItem from="1553081365478" duration="58618000" />
+      <workItem from="1553592169169" duration="9845000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1553269395209</created>
@@ -453,19 +446,57 @@
       <option name="project" value="LOCAL" />
       <updated>1553358011478</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <created>1553436886598</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553436886598</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135915000" />
+    <option name="totallyTimeSpent" value="150600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4868735" visible="true" weight="0.23600605" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48448688" visible="true" weight="0.2397882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.5131265" side_tool="true" weight="0.23600605" />
+      <window_info id="Web" order="2" sideWeight="0.5155131" side_tool="true" weight="0.2397882" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32741934" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.32419354" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Spring" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5015129" side_tool="true" weight="0.32419354" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32419354" />
+      <window_info anchor="bottom" id="Application Servers" order="14" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48448688" visible="true" weight="0.2397882" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" sideWeight="0.5155131" side_tool="true" weight="0.2397882" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -483,37 +514,6 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3268921" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32419354" />
-      <window_info anchor="bottom" id="Application Servers" order="14" />
-      <window_info anchor="bottom" id="Java Enterprise" order="15" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4868735" visible="true" weight="0.23600605" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Web" order="2" sideWeight="0.5131265" side_tool="true" weight="0.23600605" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32741934" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.32419354" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32903227" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3268921" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32741934" />
       <window_info anchor="bottom" id="Application Servers" order="14" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -549,6 +549,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -595,164 +609,22 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/配置文件/JDBCUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" selection-start-line="4" selection-start-column="4" selection-end-line="6" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/druid.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="93" column="13" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="93" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/service/impl/UserServiceImpl.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/dao/UserDao.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/代码/day17_case/src/cn/itcast/dao/impl/UserDaoImpl.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/list.html" />
+    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/add.html" />
     <entry file="file://$USER_HOME$/Desktop/update.html" />
-    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="49" column="10" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="49" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/资料/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#span#0;n#ul#0;n#nav#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/web/servlet/DelSelectedServlet.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/domain/PageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/web/servlet/FindUserByPageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="40" column="79" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="116" column="48" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="48" />
-          <folding>
-            <element signature="e#2500#2508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/web/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="171" column="56" lean-forward="true" selection-start-line="171" selection-start-column="56" selection-end-line="171" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/BaiduNetdiskDownload/day17_EL&amp;JSTL/资料/02_案例/页面/login.html" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/资料/list.jsp" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/service/UserService.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/dao/UserDao.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/web/servlet/DelSelectedServlet.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/service/impl/UserServiceImpl.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/domain/PageBean.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/web/servlet/FindUserByPageServlet.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/src/cn/itcast/dao/impl/UserDaoImpl.java" />
+    <entry file="file://D:/BaiduNetdiskDownload/day18_综合案例(用户信息)/代码/day17_case/web/list.jsp" />
     <entry file="file://$PROJECT_DIR$/src/Util/JDBCUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -762,13 +634,6 @@
             <element signature="initializer##0;class#JDBCUtil#0" />
             <element signature="method#getconnection#0;class#JDBCUtil#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -841,13 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -927,23 +785,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/BaiduNetdiskDownload/day20_JQuery基础/代码/day20_JQuery基础/04-事件绑定.html" />
+    <entry file="file://D:/BaiduNetdiskDownload/day20_JQuery基础/代码/day20_JQuery基础/案例/03.QQ表情选择/QQ表情选择.html" />
+    <entry file="file://D:/BaiduNetdiskDownload/day20_JQuery基础/代码/day20_JQuery基础/案例/04.多选下拉列表左右移动/左右移动.html" />
+    <entry file="file://D:/BaiduNetdiskDownload/day21_JQuery高级/代码/day21_JQuery高级/04-jQuery综合案例/抽奖.html" />
     <entry file="file://$PROJECT_DIR$/web/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
+        <state relative-caret-position="920">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/deletecheckServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/searchbycondServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="300">
           <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="640">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -951,42 +820,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/deletecheckServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/bean/user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+        <state relative-caret-position="440">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/userDao.java">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="340">
+          <caret line="55" column="12" selection-start-line="49" selection-start-column="6" selection-end-line="55" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findbyid#0;class#userDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/filter/fuckFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="63">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#460#468#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/userDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/usernamecheckServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding>
+            <element signature="e#731#747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="85" column="64" lean-forward="true" selection-start-line="85" selection-start-column="64" selection-end-line="85" selection-end-column="64" />
         </state>
       </provider>
     </entry>

@@ -55,4 +55,6 @@ public interface dao {
      * @return
      */
     public List<user> findbycond(Map<String, String[]> condition, spilpage spilpage);
+
+    public user findbyuname(String uname);
 }

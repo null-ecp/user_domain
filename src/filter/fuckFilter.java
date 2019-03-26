@@ -40,7 +40,6 @@ public class fuckFilter implements Filter {
                             String value = (String) method.invoke(req, args);
                             if (value != null){
                                 for (String s : fucklist) {
-                                    System.out.println(s);
                                     if (value.contains(s)){
                                         value = value.replace(s, "***");
                                         break;

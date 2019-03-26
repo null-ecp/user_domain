@@ -76,7 +76,12 @@ public class userDao implements dao{
     @Override
     public user findbyid(int id) {
         String sql = "select * from user_info where id = ?";
-        user user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<user>(user.class), id);
+        user user = null;
+        try {
+            user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<user>(user.class), id);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
         return user;
     }
 
@@ -105,16 +110,26 @@ public class userDao implements dao{
         // 用于存储 ? 的值
         List<Object> values = new ArrayList<Object>();
         StringBuffer sbf = spilString(condition, values);
-        System.out.println(sbf.toString());
         // 拼接分页查询
         sbf.append(" limit ? , ?");
-        System.out.println(sbf.toString());
         int start = (spilpage.getPageindex() - 1) * spilpage.getPagesize();
         int end = spilpage.getPagesize();
         values.add(start);
         values.add(end);
 
         return jdbcTemplate.query(sbf.toString(), new BeanPropertyRowMapper<user>(user.class), values.toArray());
+    }
+
+    @Override
+    public user findbyuname(String uname) {
+        String sql = "select * from user_info where uname = ?";
+        user user = null;
+        try {
+            user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<user>(user.class), uname);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return user;
     }
 
     /**

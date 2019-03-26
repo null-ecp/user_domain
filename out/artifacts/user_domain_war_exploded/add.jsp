@@ -65,6 +65,33 @@
             <input class="btn btn-default" type="button" value="返回" />
         </div>
     </form>
+    <div id="tips_box" class="alert alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" >
+            <span>&times;</span>
+        </button>
+        <span id="tips_msg">用户名已存在 , 请更换</span>
+    </div>
 </div>
+<script>
+    $(function (){
+        $("#tips_box").hide()
+        $("#uname").blur(function () {
+            recv = $.post("${pageContext.request.contextPath}/checkusername",
+                {"uname":$("#uname").val()},function (data,status) {
+                    // 判断名字是否重复
+                    if (data.hasuname) {
+                        $("#tips_box").hide()
+                        $("#tips_msg").html(data.msg)
+                        $("#tips_box").removeClass("alert-danger").addClass("alert-success").slideDown(1000)
+                    } else {
+                        $("#tips_box").hide()
+                        $("#tips_msg").html(data.msg)
+                        $("#tips_box").removeClass("alert-success").addClass("alert-danger").slideDown(1000)
+                    }
+                }, "json");
+
+        });
+    });
+</script>
 </body>
 </html>
