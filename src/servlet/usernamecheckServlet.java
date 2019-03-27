@@ -16,6 +16,7 @@ import java.util.Map;
 @WebServlet("/checkusername")
 public class usernamecheckServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 设置json对应的响应头
         response.setContentType("application/json;charset=utf-8");
         String uname = request.getParameter("uname");
         // 创造一个map来存储

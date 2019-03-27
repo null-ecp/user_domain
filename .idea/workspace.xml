@@ -7,23 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd5b2fc-420f-4d7b-9b89-5e2ea1a2d9de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/servlet/usernamecheckServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-annotations-2.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-core-2.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-databind-2.2.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/bean/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/bean/user.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/userDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/WEB-INF/classes/dao/userDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/user_domain_war_exploded/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/user_domain/bean/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user_domain/bean/user.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/user_domain/dao/dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user_domain/dao/dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/user_domain/dao/userDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/user_domain/dao/userDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/userDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/userDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filter/fuckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/fuckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/usernamecheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/usernamecheckServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="85" column="64" lean-forward="true" selection-start-line="85" selection-start-column="64" selection-end-line="85" selection-end-column="64" />
+            <state relative-caret-position="149">
+              <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -68,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/servlet/usernamecheckServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+              <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
               <folding>
                 <element signature="e#731#747#0" expanded="true" />
               </folding>
@@ -130,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dao/userDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="132" column="5" selection-start-line="122" selection-start-column="4" selection-end-line="132" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,8 +178,8 @@
         <option value="$PROJECT_DIR$/src/filter/fuckFilter.java" />
         <option value="$PROJECT_DIR$/src/dao/dao.java" />
         <option value="$PROJECT_DIR$/src/dao/userDao.java" />
-        <option value="$PROJECT_DIR$/src/servlet/usernamecheckServlet.java" />
         <option value="$PROJECT_DIR$/web/add.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/usernamecheckServlet.java" />
       </list>
     </option>
   </component>
@@ -409,7 +394,7 @@
       <workItem from="1552809947981" duration="22049000" />
       <workItem from="1552965250006" duration="30165000" />
       <workItem from="1553081365478" duration="58618000" />
-      <workItem from="1553592169169" duration="9845000" />
+      <workItem from="1553592169169" duration="11005000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1553269395209</created>
@@ -453,17 +438,23 @@
       <option name="project" value="LOCAL" />
       <updated>1553436886598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1553614552739</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553614552739</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150600000" />
+    <option name="totallyTimeSpent" value="151760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48448688" visible="true" weight="0.2397882" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48448688" visible="true" weight="0.2397882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.5155131" side_tool="true" weight="0.2397882" />
       <window_info id="Designer" order="3" />
@@ -471,7 +462,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32741934" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.32419354" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.32419354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -857,30 +848,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/userDao.java">
+    <entry file="file://$PROJECT_DIR$/web/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="149">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/usernamecheckServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
           <folding>
             <element signature="e#731#747#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/add.jsp">
+    <entry file="file://$PROJECT_DIR$/src/dao/userDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="85" column="64" lean-forward="true" selection-start-line="85" selection-start-column="64" selection-end-line="85" selection-end-column="64" />
+        <state relative-caret-position="255">
+          <caret line="132" column="5" selection-start-line="122" selection-start-column="4" selection-end-line="132" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
